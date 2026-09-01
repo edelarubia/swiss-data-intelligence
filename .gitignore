@@ -1,5 +1,7 @@
 # Python environment
 .venv/
+.venv-mac/
+.venv-windows/
 venv/
 env/
 
