@@ -1,0 +1,19 @@
+# Core data processing
+pandas
+numpy
+openpyxl
+
+# Data acquisition
+requests
+
+# PC-Axis (PX) support
+pyaxis
+
+# Data visualization
+matplotlib
+
+# Interactive development
+notebook
+
+# Code quality
+ruff
