@@ -22,9 +22,11 @@ data/interim/
 data/processed/
 
 # Models
-models/
 *.pkl
 *.joblib
+
+# Keep the final model used by the Streamlit MVP
+!models/home_ownership_gradient_boosting.joblib
 
 # System files
 .DS_Store

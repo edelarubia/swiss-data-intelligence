@@ -11,9 +11,20 @@ pyaxis
 
 # Data visualization
 matplotlib
+geopandas
+
+# Machine learning
+scikit-learn
+joblib
+
+# Web application
+streamlit
 
 # Interactive development
 notebook
 
 # Code quality
 ruff
+
+# Interactive visualization
+altair
