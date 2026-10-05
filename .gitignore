@@ -38,3 +38,6 @@ Thumbs.db
 
 # Microsoft Office temporary files
 ~$*
+
+# Local academic references managed with Zotero
+docs/references/
