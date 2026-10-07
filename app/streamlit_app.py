@@ -8,6 +8,12 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 
+# Configure the Streamlit page.
+st.set_page_config(
+    page_title="Swiss Data Intelligence",
+    page_icon="🇨🇭",
+    layout="wide",
+)
 
 # Resolve the project root from the location of this file.
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -86,12 +92,6 @@ FAVICON_PATH = (
 )
 
 favicon = Image.open(FAVICON_PATH)
-
-st.set_page_config(
-    page_title="Swiss Data Intelligence",
-    page_icon="🚀",
-    layout="wide",
-)
 
 @st.cache_data
 def load_data() -> pd.DataFrame:
@@ -193,13 +193,6 @@ def prepare_map_data(
 
     return map_data
 
-# Configure the Streamlit page.
-st.set_page_config(
-    page_title="Swiss Data Intelligence",
-    page_icon="🇨🇭",
-    layout="wide",
-)
-
 
 # Load the processed data.
 df = load_data()
@@ -240,7 +233,7 @@ logo_col1, logo_col2, logo_col3 = st.columns(
 with logo_col2:
     st.image(
         LOGO_PATH,
-        width="stretch",
+        use_container_width=True,
     )
 
 st.markdown(
@@ -843,7 +836,7 @@ with info_col:
     with image_center:
         st.image(
             coat_of_arms_path,
-            width="stretch",
+            use_container_width=True,
         )
 
     # Display the selected canton information.
